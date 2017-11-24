@@ -7,15 +7,20 @@ function Car(speed){
     // this 를 사용하지 않은 변수
     message = 'I am Car';
     // this를 사용하지 않은 변수에 접근하기 위한 멤버함수 선언
-    this.print = function(){
+    this.printMsg = function(){
         console.log(message);
     };
 }
 
 // 객체를 생성
-var myClazz = new Clazz('good to see u!');
-console.log(myClazz.message);
-// this를 사용하지 않은 message2 변수는 외부에서 참조 불가
-console.log(myClazz.message2);
+var car = new Car(50)
+;
+// this를 사용했던 맴버변수 출력
+console.log("Color : "+car.color);
+console.log("Speed : "+car.speed);
+
+// this를 사용하지 않은 message 변수는 외부에서 참조 불가
+console.log(car.message);
+
 // this로 선언된 함수를 통해 사용할 수 있다.
-myClazz.print();
+car.printMsg();
