@@ -1,8 +1,8 @@
 // class(함수)의 선언
-function Car(speed){
+function Car(spd){
     // 변수를 객체의 맴버로 사용하기 위해 this 예약어 사용
     this.color = 'Red';
-    this.speed = speed;
+    this.speed = spd;
 
     // this 를 사용하지 않은 변수
     message = 'I am Car';
