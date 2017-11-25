@@ -17,7 +17,8 @@ var server = http.createServer(function(req, res){
     console.log('---log end---');
 
     res.writeHead(200, {'Content-type':'text/html'});
-    res.end('Hello node.js!!');
+    // 파싱한 쿼리문에서 원하는 값 전달
+    res.end('var1 : '+parsedQuery.var1);
 });
 
 server.listen(8080, function(){
